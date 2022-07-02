@@ -59,14 +59,57 @@ a, a:hover {
 
 .dsmovie-contact-container img {
     margin-right: 10px; 
+    width: 25px;
  }
 
 .dsmovie-card {
     width: 100%;
 }
 
+.dsmovie-pagination-container {
+    padding: 15px;
+    display:flex;
+    justify-content:center;
+}
+
+.dsmovie-pagination-box {
+    display:flex;
+    width: 180px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box p {
+    margin-bottom: 0;
+    font-size:12px;
+    color: var(--color-primary);
+    font-weight:400;
+}
+
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border : 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+
+}
+
+.dsmovie-pagination-box button img {
+    filter: invert(22%) sepia(29%) saturate(5247%) hue-rotate(235deg) brightness(101%) contrast(89%);
+}
+/* para rotacionar uma imagem e necessario tem uma class na imagem pedida, e apos isso no css utilize o 
+transfor: rotate(180deg);*/
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid var(--text-light-gray);
+}
+
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
+}
+
 #dsmovie-card-list {
-    padding: 40px 10px;
+    padding: 0px 10px;
 }
 
 .dsmovie-card img {
